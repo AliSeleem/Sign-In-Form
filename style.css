@@ -197,4 +197,8 @@ main{
     .rect2 , .rect3{
         width: 100%;
     }
+    .rect2{
+        margin-top: 10px;
+        background-color: white;
+    }
 }
