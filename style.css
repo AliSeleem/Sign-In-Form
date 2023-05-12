@@ -1,0 +1,200 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #6BACB3;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100vw;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 767px){
+    main{height: 100vh;}
+}
+
+.rect2{       
+    width: 65%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(185, 125, 141, 0.2);
+}  
+
+.rect2 img{
+    width: 30%;
+    aspect-ratio: 978 / 800;
+    animation-name: flow;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes flow {
+    0%{
+        transform: translateY(-15%);
+    }
+    100%{
+        transform: translateY(5%);
+    }
+}
+
+.rect3{
+    width: 30%;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rect3 form{
+    width: 70%;
+    overflow: hidden;
+}
+
+.rect3 form h2{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.rect3 form label{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px; 
+}
+
+.rect3 form input{
+    margin: 10px 0;
+    width: 100%;
+    height: 30px;
+    background: #FFFFFF;
+    border: 2px solid #7EBCC3;
+    border-radius: 7px;
+    position: relative;
+    outline: none;
+    padding: 7px;
+    
+}
+
+
+#email{
+    background-image: url(Vector.png);
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+    background-position-y: center;
+}
+
+#Password{
+    background-image: url(Vector\ \(1\).png);
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+    background-position-y: center;   
+}
+
+.rect3 form p:first-of-type{
+    text-align: end;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 20px;    
+}
+
+.rect3 form button{
+    background: #7EBCC3;
+    border-radius: 7px;
+    width: 100%;
+    height: auto;
+    outline: none;
+    border-color: transparent;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    padding: 10px 0;
+}
+
+.rect3 form p:nth-of-type(2){
+    text-align: center;
+    margin: 10px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.rect3 form .or{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;    
+}
+
+.rect3 form .or span{
+    width: 30%;
+    height: 1px;
+    background-color: black;
+    margin: 5px;
+}
+
+.rect3 form .google{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 7px;  
+    margin: 20px 0;
+    padding: 10px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;    
+    color: #000000;  
+}
+
+.rect3 form .google img{
+    margin: 0 10px;
+}
+
+@media screen and (max-width: 1000px){
+    .rect2{width: 50%;}
+    .rect3{width: 45%;}
+}
+
+@media screen and (max-width: 767px){
+    .rect2 , .rect3{
+        width: 100%;
+    }
+}
